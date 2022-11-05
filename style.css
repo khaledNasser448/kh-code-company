@@ -223,6 +223,70 @@ a{
     }
     /* end landing */
     /* end header */
+    /* start mega-menue */
+    .header .main-nav >li:hover .mega-menu{
+        opacity: 1;
+        z-index: 100;
+        top: calc(100% + 1px);
+    }
+    .mega-menu{
+        position: absolute;
+    left: 0;
+    top: calc(100% + 50px);
+    background-color: white;
+    opacity: 0;
+    z-index: -1;
+    display: flex;
+    z-index: -5;
+    width: 100%;
+    gap: 40px;
+    padding: 30px;
+    border-bottom: 3px solid var(--main-color);
+    transition: top var(--main-transition), opacity var(--main-transition);
+
+    }
+    
+    .mega-menu .links{
+        flex: 1;
+        min-width: 250px;
+
+    }
+    .mega-menu .links li{
+        position: relative;
+
+
+    }
+    .mega-menu .links li:not(:last-child){
+        border-bottom: 1px solid #e9e6e6;
+    }
+    .mega-menu .links li::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #fafafa;
+        z-index: -1;
+        transition: var(--main-transition);
+    }
+    .mega-menu .links li:hover::before{
+        width: 100%;
+    }
+    .mega-menu .links li a{
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    padding: 15px;
+
+    }
+    .mega-menu .links li a i{
+        margin-right: 10px;
+    }
+    
+    /* end mega-menue */
     /* start animation */
     @keyframes left-move{
         50%{
