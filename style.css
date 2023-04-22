@@ -812,6 +812,7 @@ a{
         position: relative;
     }
     .skills-container .container .skills .skill .progress span{
+        transition: var(--main-transition);
         background-color: var(--main-color);
         position: absolute;
         top: 0;
