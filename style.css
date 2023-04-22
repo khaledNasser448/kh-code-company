@@ -819,6 +819,76 @@ a{
         height: 100%;
 
     }
+    /* start how it works */
+    .how-it-works{
+        padding-top: var(--main-padding);
+        padding-bottom: var(--main-padding);
+        position: relative;
+        background-color: var(--background-color);
+    }
+    .how-it-works .container{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    }
+    .how-it-works .container img{
+        max-width: 100%;
+        margin-right: 110px;
+    }
+    .how-it-works .container .details .card{
+        display: flex;
+        align-items: center;
+        background-color: #f6f5f5;
+        padding: 20px;
+        margin-bottom: 25px;
+        border-radius: 7px;
+        border: 2px solid white;
+        position: relative;
+        z-index: 1;
+
+    }
+    .how-it-works .container .details .card::before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        background-color:#ededed;
+        width: 0;
+        height: 0;
+        transform: translate(-50%, -50%);
+        transform-origin: center;
+        transition: var(--main-transition);
+
+
+    }
+    .how-it-works .container .details .card:hover::before{
+        width: 100%;
+        height: 100%;
+    }
+
+    .how-it-works .container .details .card img{
+        width: 65px;
+        height: 65px;
+        margin-right: 35px;
+    }
+    .how-it-works .container .details .card .info h3{
+        margin: 0;
+        font-size: 22px;
+
+    }
+    .how-it-works .container .details .card .info p{
+        color: #777;
+        line-height: 1.7;
+        margin: 10px 0 0;
+        font-size: 18px;
+
+    }
+
+
+    /* end how it works */
     /* end skills */
     /* start animation */
     @keyframes left-move{
