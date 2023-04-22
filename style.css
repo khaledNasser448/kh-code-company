@@ -776,6 +776,50 @@ a{
 
     }
     /* end services */
+    /* start skills */
+    .skills-container{
+        padding-top: var(--main-padding);
+        padding-bottom: var(--main-padding);
+        position: relative;
+
+    }
+    .skills-container .container{
+        display: flex;
+        align-items: center;
+    }
+    .skills-container .container .skills{
+        flex: 1;
+    }
+    .skills-container .container .skills .skill{
+        margin-bottom: 15px;
+    }
+    
+    .skills-container .container .skills .skill h3{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .skills-container .container .skills .skill h3 span{
+        font-size: 13px;
+        border: 1px solid #ccc;
+        padding: 3px 5px;
+        border-radius: 5px;
+        color: var(--main-color);
+    }
+    .skills-container .container .skills .skill .progress{
+        height: 30px;
+        background-color: #eee;
+        position: relative;
+    }
+    .skills-container .container .skills .skill .progress span{
+        background-color: var(--main-color);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+
+    }
+    /* end skills */
     /* start animation */
     @keyframes left-move{
         50%{
